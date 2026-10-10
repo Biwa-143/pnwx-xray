@@ -1,0 +1,4 @@
+import { Link } from 'react-router-dom';
+import { Search } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+export default function NotFound(){return <div className="site-container py-24 text-center"><p className="eyebrow">404 · PAGE NOT FOUND</p><h1 className="mt-4 text-4xl font-semibold text-navy">Let’s get you back on track.</h1><p className="mx-auto mt-5 max-w-lg text-sm leading-7 text-slate-600">This page may have moved, or the product may still be in the original catalog. Search the migrated products or ask our team for help.</p><div className="mt-7 flex flex-wrap justify-center gap-3"><Button asChild className="rounded-lg"><Link to="/products"><Search/>Find Products</Link></Button><Button asChild variant="outline" className="rounded-lg"><Link to="/contact">Contact Our Team</Link></Button></div><a href="https://www.pnwx.com/" className="mt-6 inline-block text-sm text-primary underline">Visit the original catalog ↗</a></div>}
